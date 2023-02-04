@@ -6,18 +6,18 @@ public class FatherPanda {
 	protected int weight = 89;
 	private int age = 57;
 
-
 	public FatherPanda() {
 		super();
 	}
 
 	public static void main(String[] args) {
-		new FatherPanda().eat();
+		eat();
 	}
 	
 	public static void eat() {
-		System.out.println("Après chaque repas, Père Panda prend du poids : " + this.weight);
-		System.out.println("Et son âge est : " + this.age);
+		FatherPanda fatherPanda = new FatherPanda();
+		System.out.println("Après chaque repas, Père Panda prend du poids : " + fatherPanda.weight);
+		System.out.println("Et son âge est : " + fatherPanda.age);
 	}
 
 
